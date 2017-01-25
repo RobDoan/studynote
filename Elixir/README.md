@@ -1,4 +1,4 @@
-# Elixir
+Elixir
 ========
 
 * [Typespecs and behaviours](typespecs.md)
@@ -9,9 +9,9 @@
 
 # Phoenix
 
-* [Basic](phoenix/basic./md)
-* [Useful functions](phoenix/useful_function.md)
-* [`Ecto.Schema`](phoenix/Ecto.Schema.md)
+* [Basic](PhoenixFramework/basic./md)
+* [Useful functions](PhoenixFramework/useful_function.md)
+* [`Ecto.Schema`](PhoenixFramework/Ecto.Schema.md)
 
 ---------
 
