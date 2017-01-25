@@ -1,0 +1,1 @@
+- _*reflect-metadata shim is required when using class decorators*_: This errors because angluar-cli forgot `import './polyfills.ts';`. To fix this, just add `import './polyfills.ts';` to _main.ts_ file.
