@@ -1,2 +1,2 @@
-# [Elixir](Elixir/README.md)
-# [Javascript](Javascript/README.md)
+* [Elixir](Elixir/README.md)
+* [Javascript](Javascript/README.md)
