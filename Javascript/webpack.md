@@ -1,0 +1,1 @@
+- Configure font load with version suffix: `test: /\.(eot|svg)(\?v=[0-9]\.[0-9]\.[0-9])?$/`
