@@ -33,4 +33,8 @@ looks for a corresponding `Route` to determine component to display.
 - `RouterLinkActive` directive
 
 Example:
-`<a routerLink="/crisis-center" routerLinkActive="active">Crisis Center</a>`
+```html
+  <a routerLink="/crisis-center" routerLinkActive="active">Crisis Center</a>
+```
+
+-
