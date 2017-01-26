@@ -9,4 +9,5 @@ Javascript
   + [Angular-cli](ng2/angluar-cli.md)
   + [Errors and how to fix](ng2/errors.md)
   + [Routing](ng2/routing.md)
+  + [Testing](ng2/test.md)
 - [Webpack](webpack.md)
