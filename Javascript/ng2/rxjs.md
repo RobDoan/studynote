@@ -1,0 +1,1 @@
+- [RxJS](https://github.com/Reactive-Extensions/RxJS) is a third party library, endorsed by Angular, that implements the asynchronous observable pattern.

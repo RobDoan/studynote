@@ -1,11 +1,42 @@
+- [Notes](#notes)
+- [TestBed](#testbed)
+- [Test a component with an external template](#test-a-component-with-an-external-template)
+- [Test a component with a dependency](#test-a-component-with-a-dependency)
+- [Test a component with an async service](#test-a-component-with-an-async-service)
+-----
+
+### Notes:
 - _angular-cli@1.0.0beta.26_ errors when run `npm test`: _Uncaught ReferenceError: Zone is not defined_.
 Fixed: add `import './polyfills.ts';` to **test.ts** file.
-- **Test Component**:
-  +
+
+- **Test Component**:  
 - [**Why put specs next to the things they test?**](https://angular.io/docs/ts/latest/guide/testing.html#!#q-spec-file-location)
 - [Jasmine](https://jasmine.github.io/) is a behavior-driven development framework for testing JavaScript code.
 - [Karma](https://karma-runner.github.io/1.0/index.html) With Jasmine we can describe our tests and their expectations. Now, in order to actually run the tests we need to have a browser environment. That’s where Karma comes in. Karma allows us to run JavaScript code within a browser like Chrome or Firefox, or on a headless browser.
 - To testing Routing, if in component has `<router-outlet>` directive, on testing we should import `import { RouterTestingModule } from '@angular/router/testing'`
+
+- **when test FormGroup of async function, should write test for each scenario**.
+  + Example following test usually return fail because the second `setValue` mark the formgroup.valid to be true
+  ```javascript
+  it("password and password confirmation should be match", () =>{
+    let passwordGroup = component.signUpForm.get('password');
+      passwordGroup.setValue({
+        password: 'testpassword',
+        confirm: 'notmatchpassword'
+      });
+
+      // Because the second set value, so it always make this test fail.
+      expect(passwordGroup.valid).not.toBe();
+
+      // Should move this test to another test. otherwise it will cause an subscribe event, that make the `passwordGroup`
+      // become valid. this cause the test above fail.
+      passwordGroup.setValue({
+        password: 'testpassword',
+        confirm: 'testpassword'
+      });
+      expect(passwordGroup.valid).toBe(true);
+  })
+  ```
 
 ### TestBed
 - is the most important of Angular testing utilities.

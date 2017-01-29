@@ -1,0 +1,3 @@
+- the data stored in _localStorage_ persists until explicitly deleted
+- _sessionStorage_ will only be accessible while and by the window that created it is open
+- **Opening a page in a new tab or window will cause a new session to be initiated**
