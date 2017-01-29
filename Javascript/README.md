@@ -12,6 +12,7 @@ Javascript
   + [Dependency Injection](ng2/dependency-injection.md)
   + [Angular-cli](ng2/angluar-cli.md)
   + Angular life cycle
+  + [Comunnicate between Parent - Children component](ng2/comunicate-parent-children.md)
   + [Rxjs](ng2/rxjs.md)
   + [Form validation](ng2/form.md)
   + [Errors and how to fix](ng2/errors.md)

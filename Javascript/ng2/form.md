@@ -1,6 +1,7 @@
 + [Angular Validation Form Guide](https://angular.io/docs/ts/latest/cookbook/form-validation.html)
 + [`FormControl`, `FromGroup` and `FormBuilder`](#formcontrol-fromgroup)
 + [`FormsModule` vs `ReactiveFormsModule`](#formsmodule-vs-reactiveformsModule)
++ [`formGroupControl.setvalue` vs `formGroupControl.patchValue`](#formgroupcontrolsetvalue-vs-formgroupcontrolpatchvalue)
 + [Some notes](#notes)
 
 ### `FormControl`, `FromGroup` and `FormArray`
@@ -42,6 +43,9 @@
 ### `FormsModule` vs `ReactiveFormsModule`
 - `FormsModule`: You mark up template with form elements, validation attributes and directives from _FormsModule_. At the runtime, Angular interprets the template and derives its form control model.
 - **Reactive Forms**: You create form controls in code. You write the template with form elements, and _form..._ directives of `ReactiveFormsModule`. At the runtime, Angular binds the template elements to your control model based on your instructions.
+
+### `formGroupControl.setvalue` vs `formGroupControl.patchValue`
+- 
 
 ### Notes:
 - `touched`: check if user has touched form control, and make changes.

@@ -14,7 +14,7 @@ Fixed: add `import './polyfills.ts';` to **test.ts** file.
 - [Jasmine](https://jasmine.github.io/) is a behavior-driven development framework for testing JavaScript code.
 - [Karma](https://karma-runner.github.io/1.0/index.html) With Jasmine we can describe our tests and their expectations. Now, in order to actually run the tests we need to have a browser environment. That’s where Karma comes in. Karma allows us to run JavaScript code within a browser like Chrome or Firefox, or on a headless browser.
 - To testing Routing, if in component has `<router-outlet>` directive, on testing we should import `import { RouterTestingModule } from '@angular/router/testing'`
-
+- When test with fromControl, after we setValue for formControl from test, may be the formControl don't mark value its as touched or changes, so to test it, we should make it dirty or changes with method: `markAsDirty` or `markAsTouched`
 - **when test FormGroup of async function, should write test for each scenario**.
   + Example following test usually return fail because the second `setValue` mark the formgroup.valid to be true
   ```javascript

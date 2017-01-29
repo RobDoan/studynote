@@ -1,1 +1,3 @@
 - [RxJS](https://github.com/Reactive-Extensions/RxJS) is a third party library, endorsed by Angular, that implements the asynchronous observable pattern.
+- [Which Operator to Use](https://github.com/Reactive-Extensions/RxJS/blob/master/doc/gettingstarted/which-static.md)
+- [The introduction to Reactive Programming you've been missing](https://gist.github.com/staltz/868e7e9bc2a7b8c1f754)
