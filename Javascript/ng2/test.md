@@ -8,7 +8,7 @@
 ### Notes:
 - _angular-cli@1.0.0beta.26_ errors when run `npm test`: _Uncaught ReferenceError: Zone is not defined_.
 Fixed: add `import './polyfills.ts';` to **test.ts** file.
-
+- Should not test with real service. We should create a sub object.
 - **Test Component**:  
 - [**Why put specs next to the things they test?**](https://angular.io/docs/ts/latest/guide/testing.html#!#q-spec-file-location)
 - [Jasmine](https://jasmine.github.io/) is a behavior-driven development framework for testing JavaScript code.

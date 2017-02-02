@@ -10,6 +10,7 @@ Elixir
 # Phoenix
 
 * [Basic](PhoenixFramework/basic./md)
+* [Pattern matching](PhoenixFramework/pattern_matching.md)
 * [Useful functions](PhoenixFramework/useful_function.md)
 * [`Ecto.Schema`](PhoenixFramework/Ecto.Schema.md)
 

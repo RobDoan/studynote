@@ -1,4 +1,7 @@
 * [Command lines](#common-command-lines)
+* [Configuration](#configuration)
+  + [Filter params](#filter-params)
+
 
 
 ******
@@ -16,6 +19,11 @@
 - `mix do deps.{get, compile}`: pull down and compile application dependencies
 - `mix ecto.create`: create database
 
+## Debug Phoenix
+- `require IEx`
+- add `IEx.pry` to where you want to start debug
+- run `iex -S mix phoenix.server`
+- to exit debug, press "CTRL + C" or type `respawn`
 
 ## Static Assets
 - Static assets are served from `priv/static/` folder.
@@ -26,3 +34,13 @@
 plug Plug.Static, at: "/", from: :my_app,
                   only: ~w(css images js favicon.ico robots.txt)
 ```
+
+## Configuration
+
+### Filter params
+
+  ```elixir
+  # config/config.exs
+  config :phoenix,
+    :filter_parameters, ["password", "secret"]
+  ```

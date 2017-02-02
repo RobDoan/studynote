@@ -12,6 +12,9 @@
   @spec round(number) :: integer
   def round(number), do: # implementation...
 
+  @spec authenticate(%{email: String.t, password: String.t}) :: {:ok, %User{}} | {:fail, atom}
+  def authenticate(%{email: email, password: password}), do: ...
+
   @spec token(binary | map) :: Token.t
   def token(payload) when is_map(payload) do
     ...        
