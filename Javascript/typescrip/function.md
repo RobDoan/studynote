@@ -20,5 +20,3 @@
 
 ### Default params
 `function calculate_discount(price:number,rate:number = 0.50)`
-
-###
