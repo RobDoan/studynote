@@ -4,6 +4,7 @@ Elixir
 * [Typespecs and behaviours](typespecs.md)
 * [Directives](directives.md)
 * [Protocols - Polymorphic Functions](protocols.md)
+* `:observer.start()` to see information and graphs about your live node.
 
 ---------
 

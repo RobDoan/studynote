@@ -2,6 +2,8 @@
 2. [require](#require)
 3. [import](#import)
 4. [use](#use)
+5. [@vsn](#vsn)
+6. [@name](#name)
 
 -----------
 
@@ -75,3 +77,17 @@
     Feature.__using__(option: :value)
   end
   ```
+
+### `@vsn`
+
+ - If we want to version our code and data, we have to tell OTP the version
+numbers of what is running. So, at the top of our module we’ll add an @vsn
+directive.
+```Elixir
+  defmodule Sequence.Server do
+    use GenServer
+    @vsn "0"
+  end
+```
+
+### `@name`
