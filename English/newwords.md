@@ -9,4 +9,5 @@
       -  the results have been encouraging(/support/) enough to merit further investigation.
   - granular
   - hierachy  /'haiərɑ:ki/
-    + OTP defines systems in terms of hierachies of applications. 
+    + OTP defines systems in terms of hierachies of applications.
+  - dense

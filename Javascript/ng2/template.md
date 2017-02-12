@@ -1,7 +1,8 @@
 * [* and `<template>`](#-and-template)
 * [@angular/flex-layout](#angular-flex-layout)
+* [Build in directive](#build-in-directives)
 
-
+****
 
 ### * and <template>
 - __*__ prefix syntax allowed us to skip <template> tags and focus directly on the HTML element that we are including, excluding, or repeating. [More examples](https://angular.io/docs/ts/latest/guide/template-syntax.html#!#star-template)
@@ -34,3 +35,6 @@
   + `fxFlexOffset` __%, px, vw, vh__
   +  `fxFlexAlign` values: `start|baseline|center|end`. This is equal style in css: `align-self`
   + `fxFlexFill`
+
+### Build in directive
+- `<img [src]="movie.imageurl">` image src

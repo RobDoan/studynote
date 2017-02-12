@@ -1,3 +1,7 @@
+- Public API - A curated list of APIs from round the web.
+  + https://github.com/abhishekbanthia/Public-APIs
+  + https://apis.guru/browse-apis/
+- [List of awesome links](https://github.com/sindresorhus/awesome)
 - [Microservices](#microservices)
   + [Optimizing the Netflix API](http://techblog.netflix.com/2013/01/optimizing-netflix-api.html)
   + [Elixir in times of microservices - Jose Valim](http://blog.plataformatec.com.br/2015/06/elixir-in-times-of-microservices/)
@@ -9,6 +13,13 @@
 - [Google Open Source projects](https://developers.google.com/open-source/projects)
 - [Entrepreneur](#entrepreneur)
   + [How To Develop An Entrepreneur Mindset](https://medium.com/the-mission/how-to-develop-an-entrepreneur-mindset-949004ad71b3#.dxqun3r6v)
+- CSS Tips
+  + [CSS Protips](https://github.com/AllThingsSmitty/css-protips)
+- Interview Question
+  + Javascript
+    + https://github.com/kennymkchan/interview-questions-in-javascript
+  + Front-end Developer
+    + https://github.com/h5bp/Front-end-Developer-Interview-Questions
 ----
 
 # Microservices
@@ -77,4 +88,3 @@
   + Real businesses have cycles. If you are as lean as possible then you can handle a downturn. I never hired a secretary, for instance. And we only moved offices when we were 40 people in a three room office.
   + If you live in the real world and not on welfare then you need to spend less than you charge.
   + The startup mindset is: “Do I have more cash in the bank at the end of the month (when bills are due) than I had at the beginning of the month”.
-  

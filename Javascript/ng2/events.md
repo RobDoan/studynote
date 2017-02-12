@@ -1,6 +1,5 @@
 * [Add Listener for directive or component](#add-listener-for-directive-or-component)
 
-
 ----
 
 ### Add Listener for directive or component
@@ -25,4 +24,4 @@
     }
   })
 ```
-- 
+-

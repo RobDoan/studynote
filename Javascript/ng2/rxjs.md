@@ -2,6 +2,7 @@
 * [Which Operator to Use](https://github.com/Reactive-Extensions/RxJS/blob/master/doc/gettingstarted/which-static.md)
 * [The introduction to Reactive Programming you've been missing](https://gist.github.com/staltz/868e7e9bc2a7b8c1f754)
 * [Subject](#subject)
+* [Should I `unsubscribe` from `subscription`?]
 
 
 
@@ -50,3 +51,9 @@
     + [`ReplaySubject`](https://github.com/Reactive-Extensions/RxJS/blob/master/doc/api/subjects/replaysubject.md) : stores all the values that it has published. Therefore, when you subscribe to it, you automatically receive an entire history of values that it has published, even though your subscription might have come in after certain values have been pushed out.
     + [`BehaviorSubject`](https://github.com/Reactive-Extensions/RxJS/blob/master/doc/api/subjects/behaviorsubject.md): is similar to `ReplaySubject`, except that it only stored the last value it published. `BehaviourSubject` also requires a default value upon initialization.
     +  [`AsyncSubject`](https://github.com/Reactive-Extensions/RxJS/blob/master/doc/api/subjects/asyncsubject.md) is similar to the `Replay` and `Behavior` subjects, however it will only store the last value, and only publish it when the sequence is completed.
+
+### Should I `unsubscribe` from subscription
+- There are 2 kind of _Observables_: __finite__ and __infinite__
+- __finite__ : HTTP request - We don't need to `unsubscribe` manually.
+- __infinite__: DOM event listener, `Subject`, ... - We should `unsubscribe`
+- [source](http://stackoverflow.com/questions/38008334/angular2-rxjs-when-should-i-unsubscribe-from-subscription)
