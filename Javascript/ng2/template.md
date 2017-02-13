@@ -4,8 +4,8 @@
 * [Host Binding](#host-binding)
 ****
 
-### * and <template>
-- __*__ prefix syntax allowed us to skip <template> tags and focus directly on the HTML element that we are including, excluding, or repeating. [More examples](https://angular.io/docs/ts/latest/guide/template-syntax.html#!#star-template)
+### `*`` and `<template>`
+__*__ prefix syntax allowed us to skip <template> tags and focus directly on the HTML element that we are including, excluding, or repeating. [More examples](https://angular.io/docs/ts/latest/guide/template-syntax.html#!#star-template)
 
 ### @angular/flex-layout
 - [API link](https://github.com/angular/flex-layout/wiki/API-Overview)
