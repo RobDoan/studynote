@@ -40,12 +40,11 @@
    ]);
    ```
 
-### `FormsModule` vs `ReactiveFormsModule`
+### FormsModule vs ReactiveFormsModule
 - `FormsModule`: You mark up template with form elements, validation attributes and directives from _FormsModule_. At the runtime, Angular interprets the template and derives its form control model.
-- **Reactive Forms**: You create form controls in code. You write the template with form elements, and _form..._ directives of `ReactiveFormsModule`. At the runtime, Angular binds the template elements to your control model based on your instructions.
+- `Reactive Forms`: You create form controls in code. You write the template with form elements, and _form..._ directives of `ReactiveFormsModule`. At the runtime, Angular binds the template elements to your control model based on your instructions.
 
 ### `formGroupControl.setvalue` vs `formGroupControl.patchValue`
-- 
 
 ### Notes:
 - `touched`: check if user has touched form control, and make changes.

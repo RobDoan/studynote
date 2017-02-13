@@ -1,5 +1,5 @@
 * [`:host`](#host)
-* [`::host-context`](#host-context)
+* [`:host-context`](#host-context)
 * [`/deep/`](#deep)
 * [Template Link Tags](#template-link-tags)
 * [CSS `@imports`](#css-imports)
@@ -45,6 +45,6 @@
 #### Emulated
   + this is default value.
   + emulate shadow dom by processing css code to effectively scope the CSS to the component's view.
-  
+
 #### None
   + Angular adds the CSS to the global styles
