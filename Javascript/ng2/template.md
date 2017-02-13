@@ -1,12 +1,11 @@
 * [* and `<template>`](#-and-template)
 * [@angular/flex-layout](#angular-flex-layout)
 * [Build in directive](#build-in-directives)
-
+* [Host Binding](#host-binding)
 ****
 
 ### * and <template>
 - __*__ prefix syntax allowed us to skip <template> tags and focus directly on the HTML element that we are including, excluding, or repeating. [More examples](https://angular.io/docs/ts/latest/guide/template-syntax.html#!#star-template)
-
 
 ### @angular/flex-layout
 - [API link](https://github.com/angular/flex-layout/wiki/API-Overview)
@@ -38,3 +37,6 @@
 
 ### Build in directive
 - `<img [src]="movie.imageurl">` image src
+
+### Host Binding
+- Example check [here](../examples/hero-host-meta.component.ts)

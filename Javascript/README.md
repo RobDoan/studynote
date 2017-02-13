@@ -6,7 +6,7 @@ Javascript
   + [Commands](npm/commands.md)
 - ES6
 - Typescript
-  + [Function](typescrip/function.md)
+  + [Function](typescript/function.md)
 - Ng2(Angular2)
   + [Cheatsheet](https://angular.io/cheatsheet)
   + [Performance Checklist](https://github.com/mgechev/angular-performance-checklist)
@@ -31,4 +31,4 @@ Javascript
 - [Awesome Angular2](https://github.com/codeschool/awesome-angular2)
 - Angular UI
   + [Fuel UI](https://github.com/FuelInteractive/fuel-ui)
-- [Prismjs]http://prismjs.com/#languages-list  - Code syntax highlight 
+- [Prismjs]http://prismjs.com/#languages-list  - Code syntax highlight
