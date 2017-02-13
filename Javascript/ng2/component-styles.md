@@ -41,8 +41,10 @@
   + Use browser's native [Shadow DOM](https://developer.mozilla.org/en-US/docs/Web/Web_Components/Shadow_DOM).
   + The component's styles are included within the Shadow DOM.
   + **Only few browsers support shadow dom at this time**
+
 #### Emulated
   + this is default value.
   + emulate shadow dom by processing css code to effectively scope the CSS to the component's view.
-### None
+  
+#### None
   + Angular adds the CSS to the global styles
