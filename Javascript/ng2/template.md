@@ -2,7 +2,7 @@
 * [@angular/flex-layout](#angular-flex-layout)
 * [Build in directive](#build-in-directives)
 * [Host Binding](#host-binding)
-
+* [Material Palette](https://www.materialpalette.com/icons)
 ******
 
 ### `*` and `<template>`

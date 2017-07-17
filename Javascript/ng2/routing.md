@@ -1,5 +1,7 @@
 * [Route guards](#route-guards)
 * [Router events](#router-events)
+* [Route options](#route-options)
+* [LazyLoad Module](#lazyload-module)
 * [Notes](#notes)
 
 
@@ -10,7 +12,7 @@
 
   > The guard can also tell the router to navigate elsewhere, effectively canceling the current navigation.
 
-- A routing guard can return an Observable<boolean> or a Promise<boolean> and the router will wait for the observable to resolve to true or false.  
+- A routing guard can return an Observable<boolean> or a Promise<boolean> and the router will wait for the observable to resolve to true or false.
 - Guard check level
   {`CanDeactivate`, `CanActivateChild`} -> `CanActivate` -> `CanLoad`
 
@@ -35,8 +37,27 @@
   )
 ```
 
+### Route options
+- `pathMatch`
+  + _full_ :
+  + _prefix_:
+- matcher
+- canActivate
+- resolve
+- outlet
+
+### LazyLoad Module
+- Lazy Load Module does not import. They will be fetched and mounted asynchronously when the user navigates to one of their routes.
+```Typescript
+  export const routes: Routes = [
+    { path: '', redirectTo: 'contact', pathMatch: 'full'},
+    { path: 'crisis', loadChildren: 'app/crisis/crisis.module#CrisisModule' },
+    { path: 'heroes', loadChildren: 'app/hero/hero.module#HeroModule' }
+  ];
+```
+
 ### Notes:
-- `<base href="/">`: most routing should add this base element into <head> tag of index.html  
+- `<base href="/">`: most routing should add this base element into <head> tag of index.html
 - `Router` service: Angular2 application has one instance of `Router` service. When url change, that `Router` service looks for a corresponding `Route` to determine component to display.
 - Configure Router:
   + `RouterModule.forRoot(routes: Routes)`

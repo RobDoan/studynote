@@ -11,3 +11,9 @@
   - hierachy  /'haiərɑ:ki/
     + OTP defines systems in terms of hierachies of applications.
   - dense
+  - proprietorship
+  - ostensibly
+  - engender
+  - Feasibility
+  - drastically
+  - granularity
