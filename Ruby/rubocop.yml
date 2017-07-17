@@ -1,0 +1,222 @@
+require:
+  - rubocop-rspec
+inherit_from: .rubocop_todo.yml
+
+Rails:
+  Enabled: true
+
+AllCops:
+  TargetRubyVersion: 2.2.6
+  Exclude:
+    - 'vendor/**/*'
+    - 'node_modules/**/*'
+    - 'db/*'
+    - 'db/fixtures/**/*'
+    - 'tmp/**/*'
+    - 'bin/**/*'
+    - 'generator_templates/**/*'
+    - 'builds/**/*'
+
+#---------------------BUNDLE-------------------------------#
+
+# Gems in consecutive lines should be alphabetically sorted
+Bundler/OrderedGems:
+  Enabled: true
+
+Bundler/DuplicatedGem:
+  Enabled: true
+
+#---------------------METRIC------------------------------#
+# A calculated magnitude based on number of assignments,
+# branches, and conditions.
+Metrics/AbcSize:
+  Enabled: true
+  Max: 57.08
+
+# This cop checks if the length of a block exceeds some maximum value.
+Metrics/BlockLength:
+  Enabled: false
+
+# Avoid excessive block nesting.
+Metrics/BlockNesting:
+  Enabled: true
+  Max: 4
+
+# Avoid classes longer than 100 lines of code.
+Metrics/ClassLength:
+  Enabled: false
+
+# A complexity metric that is strongly correlated to the number
+# of test cases needed to validate a method.
+Metrics/CyclomaticComplexity:
+  Enabled: true
+  Max: 16
+
+Metrics/LineLength:
+  Max: 120
+
+# Avoid methods longer than 10 lines of code.
+Metrics/MethodLength:
+  Enabled: true
+  Max: 20
+
+# Avoid modules longer than 100 lines of code.
+Metrics/ModuleLength:
+  Enabled: false
+
+# Avoid parameter lists longer than three or four parameters.
+Metrics/ParameterLists:
+  Enabled: true
+  Max: 6
+
+# A complexity metric geared towards measuring complexity for a human reader.
+Metrics/PerceivedComplexity:
+  Enabled: true
+  Max: 18
+
+#---------------------STYLE-------------------------------#
+
+# Check for non-ascii (non-English) characters in comments.
+Style/AsciiComments:
+  Enabled: true
+
+# Check indentation of private/protected visibility modifiers.
+Style/AccessModifierIndentation:
+  Enabled: true
+
+# Check the naming of accessor methods for get_/set_.
+Style/AccessorMethodName:
+  Enabled: false
+
+# Use alias_method instead of alias.
+Style/Alias:
+  EnforcedStyle: prefer_alias_method
+  Enabled: true
+
+# https://github.com/bbatsov/ruby-style-guide#no-and-or-or
+Style/AndOr:
+  EnforcedStyle: always
+
+Style/ArrayJoin:
+  Enabled: true
+
+# https://github.com/bbatsov/ruby-style-guide#no-BEGIN-blocks
+Style/BeginBlock:
+  Enabled: true
+
+# checks that the last parameter doesn't have braces around it, but requires braces if the second to last parameter is also a hash literal
+Style/BracesAroundHashParameters:
+  EnforcedStyle: context_dependent
+
+# This cop checks for uses of the case equality operator(===).
+Style/CaseEquality:
+  Enabled: false
+
+# Indentation of when in a case/when/[else/]end.
+Style/CaseIndentation:
+  Enabled: true
+
+# checks for uses of class variables
+Style/ClassVars:
+  Enabled: true
+
+Style/Documentation:
+  Enabled: false
+
+Style/DocumentationMethod:
+  Enabled: false
+
+# https://github.com/bbatsov/ruby-style-guide#no-bang-bang
+Style/DoubleNegation:
+  Enabled: true
+
+# This cop checks whether the source file has a utf-8 encoding comment or not
+Style/Encoding:
+  EnforcedStyle: always
+
+# https://github.com/bbatsov/ruby-style-guide#no-END-blocks
+Style/EndBlock:
+  Enabled: true
+
+Style/FlipFlop:
+  Enabled: true
+
+# Checks if there is a magic comment to enforce string literals
+Style/FrozenStringLiteralComment:
+  Enabled: false
+
+# Do not introduce global variables.
+Style/GlobalVars:
+  Enabled: true
+  Exclude:
+    - 'lib/backup/**/*'
+    - 'lib/tasks/**/*'
+
+# https://github.com/bbatsov/ruby-style-guide#no-nested-conditionals
+Style/GuardClause:
+  Enabled: true
+  MinBodyLength: 1
+
+Style/HashSyntax:
+  Enabled: true
+  EnforcedStyle: ruby19
+
+Style/IdenticalConditionalBranches:
+  Enabled: true
+
+Style/IfInsideElse:
+  Enabled: true
+
+Style/IfUnlessModifierOfIfUnless:
+  Enabled: true
+
+Style/IfWithSemicolon:
+  Enabled: true
+
+Style/InlineComment:
+  Enabled: true
+
+Style/MethodCalledOnDoEndBlock:
+  Enabled: true
+
+# This cop checks for the presence of method_missing without also defining respond_to_missing? and falling back on super.
+Style/MethodMissing:
+  Enabled: true
+
+# Prefer using `module function` than `extend self`
+Style/ModuleFunction:
+  Enabled: true
+  EnforcedStyle: module_function
+
+Style/MultilineBlockChain:
+  Enabled: true
+
+Style/MultilineTernaryOperator:
+  Enabled: true
+
+Style/MutableConstant:
+  Enabled: true
+
+Style/NestedTernaryOperator:
+  Enabled: true
+
+Style/OptionHash:
+  Enabled: false
+
+Style/StructInheritance:
+  Enabled: false
+
+#--------------- LAYOUT ------------------------------------#
+
+# Align the elements of an array literal if they span more than one line.
+Layout/AlignArray:
+  Enabled: true
+
+# Align the elements of a hash literal if they span more than one line.
+Layout/AlignHash:
+  Enabled: true
+
+# Here we check if the parameters on a multi-line method call or
+# definition are aligned.
+Layout/AlignParameters:
+  Enabled: false
