@@ -7,3 +7,5 @@
   + `--prune` : remove remote branch if local branch doesn't exists.
   + `-f`: push force
   + `-u` | `--upstream`: For every branch that is up to date or successfully pushed, add upstream (tracking) reference
+
+- `.keep` files are 0 byte files that are there to stop empty folders from being ignored by all sorts of processes.

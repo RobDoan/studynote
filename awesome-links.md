@@ -20,6 +20,10 @@
     + https://github.com/kennymkchan/interview-questions-in-javascript
   + Front-end Developer
     + https://github.com/h5bp/Front-end-Developer-Interview-Questions
+- [Changelogs](http://keepachangelog.com/en/1.0.0/)
+- [Change detections](http://teropa.info/blog/2015/03/02/change-and-its-detection-in-javascript-frameworks.html)
+- [Writing better cucumber secnarios] (https://robots.thoughtbot.com/writing-better-cucumber-scenarios-or-why-were)
+
 ----
 
 # Microservices
