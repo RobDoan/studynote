@@ -1,0 +1,2 @@
+- Kubernetes has a new metric called Millicores that is used to measure CPU usage. It is a CPU core split into 1000 units (milli = 1000).
+
