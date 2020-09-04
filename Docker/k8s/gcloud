@@ -1,0 +1,5 @@
+# Commands 
+
+- `gcloud auth login` 
+- `gcloud compute zones list` - get list of zone
+- `gcloud config set compute/zone <zone>` - set zone 

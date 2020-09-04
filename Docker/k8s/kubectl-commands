@@ -1,0 +1,3 @@
+# Useful commands
+
+- `kubectl patch svc $APP_INSTANCE_NAME-rabbitmq-svc  --namespace $NAMESPACE  --patch '{"spec": {"type": "LoadBalancer"}}'` - Update rabbitmq service to LOADBALANCE type
